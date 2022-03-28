@@ -1,125 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /*HEADER*/
 
 header .barraSuperior {
-    color: #fff;
-    background-color: #222;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;/*horizontal*/
-    align-items: center; /*vertical*/
-    height: 30px;
-    font-size: 12px;
-    padding: 0 50px;
+  color: #fff;
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*horizontal*/
+  align-items: center; /*vertical*/
+  height: 30px;
+  font-size: 12px;
+  padding: 0 50px;
 }
 
 header section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header section p{
-    margin: 0 7px;
+header section p {
+  margin: 0 7px;
 }
 
 header nav {
-    color: #fff;
-    background-color: #F0A83E;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;/*horizontal*/
-    align-items: center; /*vertical*/
-    height: 62px;
-    font-size: 15px;
-    padding: 0 50px;
+  color: #fff;
+  background-color: #f0a83e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*horizontal*/
+  align-items: center; /*vertical*/
+  height: 62px;
+  font-size: 15px;
+  padding: 0 50px;
 }
-header nav img{
-    height: 30px;
-    width: auto;
-}
-
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    text-transform: capitalize;
+header nav img {
+  height: 30px;
+  width: auto;
 }
 
-header nav ul li{
-    margin-left: 20px;
-    transition: all ease-in 0.3s;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-transform: capitalize;
 }
 
-header nav ul li:hover{
-    color: #c27400;
-    cursor: pointer;
+header nav ul li {
+  margin-left: 20px;
+  transition: all ease-in 0.3s;
 }
 
-header nav ul li i{
-    margin-right: 5px;
+header nav ul li:hover {
+  color: #c27400;
+  cursor: pointer;
+}
+
+header nav ul li i {
+  margin-right: 5px;
 }
 
 /* MAIN */
 
-main .bienvenido{
-    background-image: url('../img/bowl.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 609px;
-    background-size: cover;
+main .banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main .banner img {
+  height: auto;
+  width: 100%;
+}
+
+main .banner .bienvenida {
+  position: absolute;
+  text-align: center;
+  margin-right: 40px;
+}
+
+main .banner .bienvenida h1 {
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: #3c2313;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+main .banner .bienvenida p {
+  font-size: 20px;
+  color: #3c2313;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+main .banner .bienvenida button {
+  background-color: #f0a83e;
+  border: none;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: all ease-in 0.3s;
+  border-radius: 5px;
+}
+
+main .banner .bienvenida button:hover {
+  background-color: #c27400;
+  cursor: pointer;
+  color: #eee;
+}
+
+main .productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+main .productos .pawImg {
+  height: 92px;
+  width: 85px;
+}
+
+main .productos h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #3c2313;
+}
+
+main .productos ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 40px 0;
+}
+
+main .productos ul li {
+  margin-right: 10px;
+  color: #666666;
+  text-transform: capitalize;
+}
+
+main .productos .cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+main .productos .cardContainer .card {
+  background-color: #fbfaf6;
+  text-align: center;
+}
+
+main .productos .cardContainer .card .cardImg {
+  width: 238;
+  height: 243;
+}
+
+main .productos .cardContainer .card p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #3c2313;
+  margin: 10px 0;
+}
+
+main .productos .cardContainer .card span {
+  font-weight: 500;
+  font-size: 15px;
+  color: #f0a83e;
+}
+
+main .contacto {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    margin-top: 100px;
 }
 
-main .bienvenido .contenedorBienvenida {
-    margin-right: 40px;
-    text-align: center;
-}
 
-main .bienvenido .contenedorBienvenida h1{
-    height: 64px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    font-size: 35px;
+main .contacto p{
+    font-weight: 700;
+    font-size: 25px;
     color: #3C2313;
-    border-radius: 10px;
-    padding: 5px 10px;
-    font-weight: 400;
+    margin-bottom: 15px;
 }
 
-main .bienvenido .contenedorBienvenida p{
-    font-size: 20px;
-    color: #3C2313;
-    margin: 20px 0;
-    font-weight: 400;
-}
-
-main .bienvenido .contenedorBienvenida button {
-    background-color: #F0A83E;
+main .contacto input {
+    width: 340px;
+    padding: 17px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-color: #3C2313;
     border: none;
-    padding: 20px 40px;
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 400;
-    transition: all ease-in 0.3s;
-    border-radius: 5px;
 }
 
-main .bienvenido .contenedorBienvenida button:hover{
-    background-color: #c27400;
-    cursor: pointer;
-    color: #eee;
+main .contacto input::placeholder {
+    color: #fff;
+}
+
+main .contacto .btnContainer {
+    margin-top: 20px;
+}
+
+main .contacto .btnContainer button {
+    border: none;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    width: 110px;
+    height: 34px;
+}
+
+main .contacto .btnContainer .btnResetear{
+    background-color: #8A8787;
+}
+
+main .contacto .btnContainer .btnEnviar{
+    background-color: #F0A83E;
 }

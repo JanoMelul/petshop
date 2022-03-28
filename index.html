@@ -31,39 +31,64 @@
     </header>
 
     <main>
-      <section class="bienvenido">
-        <div class="contenedorBienvenida">
+      <div class="banner">
+        <img src="./img/bowl.png">
+        <div class="bienvenida">
         <h1>¡Es un placer tenerte aquí!</h1>
         <p>¡Comederos en descuento!</p>
         <button>comederos</button>
       </div>
-      </section>
-      <section>
-        <img src="img/main/pawprint 1.png" alt="" />
-        <h2>productos destacados</h2>
-        <p>comederos</p>
-        <p>accesorios</p>
-        <p>comida</p>
-      </section>
-      <section>
+    </div>
+      <div class="productos">
+        
+        <img class="pawImg" src="img/pawprint.png" alt="" />
+        <h2>Productos destacados</h2>
+        <ul>
+          <li>comederos</li>
+          <li>-</li>
+          <li>accesorios</li>
+          <li>-</li>
+          <li>comida</li>
+        </ul>
+      
+      <div class="cardContainer">
+        <div class="card">
         <img
-          src="img/main/cards/Churrasquito.png"
+        class="cardImg"
+          src="img/Churrasquito.png"
           alt="jugueteria churrasquito"
         />
-        <img src="img/main/cards/Comedero.png" alt="jugueteria comedero" />
+        <p>Jueguete Churrasquito</p>
+        <span>$150</span>
+        </div>
+      <div class="card">
         <img
-          src="img/main/cards/Huesito juguete.png"
+        class="cardImg" src="img/Comedero.png" alt="jugueteria comedero" />
+        <p>Comedero para perro</p>
+        <span>$250</span>
+      </div>
+      <div class="card">
+        <img
+        class="cardImg"
+          src="img/Huesito.png"
           alt="jugueteria huesito"
         />
-      </section>
-      <section>
+        <p>Juego Huesito</p>
+        <span>$650</span>
+      </div>
+    </div>
+    </div>
+      <div class="contacto">
         <p>contactanos</p>
-        <p>nombre y apellido</p>
-        <p>ingresa tu correo electronico</p>
-        <p>telefono</p>
-        <button>resetear</button>
-        <button>enviar</button>
+
+        <input type="text" placeholder="Nombre y Apellido"/>
+        <input type="email" placeholder="Ingresá tu correo electrónico"/>
+        <input type="text" placeholder="Teléfono"/>
+        <section class="btnContainer">
+          <button class="btnResetear">resetear</button>
+          <button class="btnEnviar">enviar</button>
       </section>
+      </div>
       <section>
         <nav>
           <img src="img/main/enviar-correo 1.png" alt="imagen correo" />
